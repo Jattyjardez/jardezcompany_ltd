@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jardez site</title>
+    <style>
+      body{
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        background-size: cover;
+         
+      }
+     .container{
+       width: 300px;
+       height: 450px;
+       background-color: white;
+       box-shadow: 0 0 20px rgba(0,0,0,0.3);
+       border-radius: 60px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+     }
+     .circle{
+       width: 250px;
+       height: 250px;
+       border: 1px rgba(0,0,0,0.3);
+       background-image: url('file1.png');
+       background-size: cover;
+       border-radius: 50%;
+       display: flex;
+       margin-top: 15px;
+     }
+     .container h3{
+       font-family: Tahoma, Sans-Serif;
+       color: #3b699f;
+       text-align: center;
+     }
+     .container h6{
+       text-align: center;
+       justify-content: center;
+     }
+     @media (max-width: 480px){
+       body{
+         width: 48vh;
+         height: 100vh;
+         background-color: #8798ac;
+         justify-content: center;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+       }
+       .container{
+         flex-direction: column;
+         margin-top: 0px;
+         
+         
+       }
+       .circle{
+         width: 220px;
+         height: 200px;
+         border-radius: 20px;
+         box-shadow: 0 0 20px rgba(0,9,9,0.3);
+       }
+       .container h3{
+         font-size: 1.1rem;
+         text-align: center;
+         background-color: white;
+         box-shadow: 0 0 10px rgba(0,0,0,0.3);
+         width: 300px;
+       }
+       .nameCard{
+         margin: 30px;
+       }
+      .container h6{
+         gap: 0.5rem;
+         margin: 0;
+       }
+       .boxcontainer{
+         width: 100%;
+       }
+       .box{
+         width: 100%;
+         display: flex;
+         margin-top: 10px;
+         justify-content:space-evenly;
+         
+       } 
+       #all{
+         
+         width: 70px;
+         height: 150px;
+         cursor: pointer;
+         transition: all 0.5s ease-in-out;
+     }   
+     .box:hover #all{
+       filter: grayscale(1) blur(2px);
+     }
+     .box:hover #all:hover{
+       filter: none;
+     }
+     .box1{
+       background-image: url(j3.jpg);
+       background-size: cover;
+       border-top-right-radius: 30px;
+       border-bottom-left-radius: 30px;
+     }
+     .box2{
+       background-image: url(j1.jpg);
+       background-size: cover;
+       border-top-right-radius: 30px;
+       border-bottom-left-radius: 30px;
+     }
+     .box3{
+       background-image: url(j2.jpg);
+       background-size: cover;
+       border-top-right-radius: 30px;
+       border-bottom-left-radius: 30px;
+     }
+     .navbar{
+       justify-content: center;
+       align-items: center;
+       padding: 0;
+       margin: 0;
+       display: flex;
+       width: 100%;
+       background-color: teal;
+     }
+     .namelogo{
+       font-family: Tahoma, Sans-Serif;
+       font-size: 24px;
+       color: #fff;
+     }
+     button{
+       background-color: #8798ac;
+       border: #8798ac;
+     }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h3 class="namelogo">Jardez Designs</h3>
+    </nav>
+    
+      <div class="container">
+        <div class="circle"></div>
+        <div class="nameCard">
+          <h3>JOEL AKANBASI</h3>
+          <h6>A curious ICT student of University <br>    of Education, Winneba <br> who had interest in <br> Programming, System Analysis <br> and Cyber Security</h6>
+        </div>
+      </div>
+      <div class="boxcontainer">
+          <div class="box">
+            <div id="all" class="box1"></div>
+            <div id="all" class="box2"></div>
+            <div id="all" class="box3"></div>
+            
+          </div>
+      </div>
+      
+  </body>
+  
+</html>
+
+

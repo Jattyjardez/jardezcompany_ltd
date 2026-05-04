@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @media(max-width: 360px){
+      body{
+        
+      }
+      .nav{
+        width: 100%;
+        background-color: teal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        gap: 5px;
+        padding: 5px 10px;
+      }
+      .nvL{
+        list-style: none;
+        display: flex;
+        gap: 5px;
+      }
+      li a{
+        font-family: Arial, Sans-Serif;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        transition: 0.5s ease-in-out;
+      }
+      li a:hover{
+        color: gold;
+      }
+      .logo{
+        margin-top: 5px;
+        padding: 0 5px;
+      }
+      #home {
+        display: flex;
+        width: 100vw;
+        background-image: url('wp1.jpg');
+        background-size: cover;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      #service {
+        display: flex;
+        width: 100vw;
+        background-image: url('wp4.jpg');
+        background-size: cover;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      #about {
+        display: flex;
+        width: 100vw;
+        background-image: url('s3.jpg');
+        background-size: cover;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      section a{
+        text-decoration: none;
+        padding: 20px;
+        border: 1px solid rgb(255,190,14);
+        border-radius: 10px;
+        font-family: Arial, Sans-Serif, Tahoma;
+        font-weight: bold;
+        color: white;
+      }
+      section a:hover{
+        background-color: #fff;
+        color: blue;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+      .hb{
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+      }
+      .name{
+        font-family: Sans-Serif, Tahoma;
+        font-size: 15px;
+        color: rgb(255,190,14);
+        font-weight: bold;
+      }
+      #menu{
+        justify-content: center;
+        align-items: center;
+        display: none;
+        padding: 10px;
+        background-color: rgb(25,100,200);
+        list-style: none;
+        position: fixed;
+        top: 63px;
+        left: 5px;
+        z-index: 1000;
+        border-radius: 10px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="hb" onclick="toggle()">&#9776</div>
+      <div class="logo">
+        <img src="LLL.png" style="width:40px; height:auto;"></div>
+        <div class="name">Jardez Designs</div>
+        <div>
+        <ul class="nvL">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About</a></li>
+        </ul>
+        </div>
+    </div>
+    <section id="home">
+      <a href="Doc.html">Home Section</a>
+    </section>
+    
+    <section id="service">
+      <a href="services.html">Services Section</a>
+    </section>
+    
+    <section id="about">
+      <a href="contact.html">About Section</a>
+    </section>
+    
+    <div class="menu" id="menu">
+      <li><a href="Doc.html">Home</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </div>
+    
+    <script>
+      function toggle(){
+        var menu = document.getElementById("menu");
+        if(menu.style.display === "block"){
+          menu.style.display = "none";
+        }else{
+          menu.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
