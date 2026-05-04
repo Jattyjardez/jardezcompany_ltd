@@ -8,6 +8,107 @@
         margin: 0;
         box-sizing: border-box;
       }
+      body{
+        width: 100vw;
+        height: 100vh;
+      }
+      .nav{
+        width: 100%;
+        background-color: teal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        gap: 5px;
+        padding: 5px 10px;
+      }
+      .nvL{
+        list-style: none;
+        display: flex;
+        gap: 5px;
+      }
+      li a{
+        font-family: Arial, Sans-Serif;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        transition: 0.5s ease-in-out;
+      }
+      li a:hover{
+        color: gold;
+      }
+      .logo{
+        margin-top: 5px;
+        padding: 0 5px;
+      }
+      #home {
+        display: flex;
+        width: 100vw;
+        background-image: url('wp1.jpg');
+        background-size: cover;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      #service {
+        display: flex;
+        width: 100vw;
+        background-image: url('wp4.jpg');
+        background-size: cover;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      #about {
+        display: flex;
+        width: 100vw;
+        background-image: url('wp2.jpg');
+        background-size: cover;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      section a{
+        text-decoration: none;
+        padding: 20px;
+        border: 1px solid rgb(255,190,14);
+        border-radius: 10px;
+        font-family: Arial, Sans-Serif, Tahoma;
+        font-weight: bold;
+        color: white;
+      }
+      section a:hover{
+        background-color: #fff;
+        color: blue;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+      .hb{
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+      }
+      .name{
+        font-family: Sans-Serif, Tahoma;
+        font-size: 15px;
+        color: rgb(255,190,14);
+        font-weight: bold;
+      }
+      #menu{
+        justify-content: center;
+        align-items: center;
+        display: none;
+        padding: 10px;
+        background-color: rgb(25,100,200);
+        list-style: none;
+        position: fixed;
+        top: 63px;
+        left: 5px;
+        z-index: 1000;
+        border-radius: 10px;
+        }
       @media(max-width: 360px){
       body{
         
